@@ -10,7 +10,7 @@
     }],
     "env": {
         "APP_ENV": "production",
-        "APP_DEBUG": "true",
+        "APP_DEBUG": "false",
         "APP_KEY": "base64:FjLqqniYgXrPCuonkZUGvGkVwbfISFtQ50Jl1E3o/Z4="
         "APP_URL": "https://tsunami-res-map.vercel.app",
  
