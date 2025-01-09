@@ -4,8 +4,8 @@
     "functions": {
         "api/index.php": { "runtime": "vercel-php@0.7.1" }
     },
-    "rewrites": [
-        { "source": "/(.*)", "destination": "/public/index.php" }
+    "redirects": [
+        { "source": "/(.*)", "destination": "/public/index.php", "statusCode": 301 }
     ],
     "env": {
         "APP_ENV": "production",
