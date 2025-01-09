@@ -1,0 +1,76 @@
+/* Style untuk sidebar agar memanjang hingga ke bawah */
+.sidebar {
+    height: 100vh; /* Memastikan sidebar memanjang penuh hingga ke bawah */
+    width: 250px;
+    position: fixed; /* Sidebar tetap di tempat saat di-scroll */
+    top: 0;
+    left: 0;
+    background-color: #000000; /* Warna background */
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Konten diatur agar bagian bawah tetap di bawah */
+}
+
+/* Style untuk logo */
+.sidebar .logo {
+    width: 80%; /* Ukuran logo disesuaikan */
+    margin: 0 auto 10px; /* Kurangi jarak ruang di bawah logo agar lebih dekat dengan elemen di bawahnya */
+    display: block;
+}
+
+/* Style untuk menu */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+/* Icon menu ditampilkan sebelum teks */
+.sidebar ul li a i {
+    margin-right: 10px; /* Jarak antara icon dan teks */
+}
+
+/* Warna garis pemisah */
+.sidebar hr {
+    border: 1px solid #555;
+}
+
+/* Button WebGIS dan Perbandingan lebih dekat ke logo */
+.menu-middle {
+    margin-bottom: 20px; /* Sesuaikan jarak dari logo */
+}
+
+.menu-middle li {
+    margin-top: -10px; /* Kurangi jarak antar menu di bagian atas */
+    padding: 10px 15px;
+    text-align: left;
+}
+
+/* About dan Help tetap berada di bawah */
+.menu-bottom {
+    margin-top: auto; /* Pastikan bagian bawah tetap di bawah */
+}
+
+.menu-bottom li {
+    padding: 10px 15px;
+    text-align: left;
+}
+
+/* Style untuk konten halaman utama */
+.content {
+    margin-left: 250px; /* Geser konten agar tidak tertutup sidebar */
+    padding: 20px;
+}
