@@ -1,27 +1,28 @@
 {
     "version": 2,
-      "framework": null,
+    "framework": null,
     "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.7.1" }
-    },
-    "rewrites": [{
-        "source": "/(.*)",
-        "destination": "https://tsunami-res-oivqe1sq4-faqih-tamamys-projects-b975fd90.vercel.app/$1",
+        "api/index.php": {
+            "runtime": "vercel-php@0.7.1"
         }
-    ]    
+    },
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/public/index.php"
+        }
+    ],
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_KEY" : "base64:FjLqqniYgXrPCuonkZUGvGkVwbfISFtQ50Jl1E3o/Z4=",
+        "APP_KEY": "base64:FjLqqniYgXrPCuonkZUGvGkVwbfISFtQ50Jl1E3o/Z4=",
         "APP_URL": "https://tsunami-res-map.vercel.app",
- 
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",
         "APP_ROUTES_CACHE": "/tmp/routes.php",
         "APP_SERVICES_CACHE": "/tmp/services.php",
         "VIEW_COMPILED_PATH": "/tmp",
- 
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie"
