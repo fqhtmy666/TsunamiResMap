@@ -5,7 +5,7 @@
         "api/index.php": { "runtime": "vercel-php@0.7.1" }
     },
     "redirects": [
-        { "source": "/(.*)", "destination": "/public/index.php", "statusCode": 301 }
+        { "source": "/(.*)", "destination": "/public/index.php"}
     ],
     "env": {
         "APP_ENV": "production",
